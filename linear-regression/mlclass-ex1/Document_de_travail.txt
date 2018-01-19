@@ -1,0 +1,75 @@
+function loadData ()
+fprintf('Plotting Data ...\n')
+data = load('ex1data1.txt');
+X = data(:, 1); y = data(:, 2);
+m = length(y); % number of training examples
+
+% Plot Data
+% Note: You have to complete the code in plotData.m
+plotData(X, y);
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
+
+end
+
+fprintf('Plotting Data ...\n')
+data = load('ex1data1.txt');
+X = data(:, 1); y = data(:, 2);
+m = length(y); % number of training examples
+
+% Plot Data
+% Note: You have to complete the code in plotData.m
+plotData(X, y);
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
+%=======================test cost function=============
+
+%========version for============
+%for i=1 ,
+%while i<=m;
+%tc=(((X(i,1)*theta(1)+(X(i;2)*theta(2))-y(i))^2)/(2*m);
+%J=J+tc;
+%i=i+1;
+%end;
+%=========version vecteur============
+D= X*theta
+E=(D-y)^2
+J=E/(2*m) % tester a quel moment faire la division
+
+%=======================test Gradient descent=============
+%========version for============
+function updateTheta ()
+for i=1,
+while i<=m;
+thetaTemp1=theta(1)-alpha*((((X(i,1)*theta(1))+(X(i;2)*theta(2))-y(i)))*X(i))/m;
+thetaTemp2=theta(2)-alpha*((((X(i,1)*theta(1))+(X(i;2)*theta(2))-y(i)))*X(i))/m;
+
+if i==m
+if (thetaTemp1/theta1)+(thetaTemp2/theta2)<=10^-6
+elseif
+elseif
+theta(1)=thetaTemp1;
+theta(2)=thetaTemp2;
+i=i+1;
+end;
+
+
+%=========version vecteur============
+
+function updateTheta (X,y,theta,maxIter,alpha)
+for iter=1:maxIter
+D=X*theta
+E=D-y
+E=E/m
+thetaTemp1=theta(1)-alpha*(E'*X(:,1))
+thetaTemp2=theta(2)-alpha*(E'*X(:,2))
+theta(1)=thetaTemp1;
+theta(2)=thetaTemp2;
+if iter==maxIter
+fprintf('Finito')
+break;
+elseif 
+iter=iter+1;
+end;
