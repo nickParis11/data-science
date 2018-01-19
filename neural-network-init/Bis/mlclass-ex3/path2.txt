@@ -1,0 +1,6 @@
+# Created by Octave 3.2.4, Thu Dec 12 16:06:46 2013 Paris, Madrid <unknown@unknown>
+# name: path
+# type: string
+# elements: 1
+# length: 50
+D:\Dataz\Temp_perso\Formations\COURSERA_MACHINE_LEARNING\ASSIGNEMENT\Week3\mlclass-ex2

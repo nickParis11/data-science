@@ -1,0 +1,11 @@
+# Created by Octave 3.2.4, Mon Nov 18 04:30:22 2013 Paris, Madrid <unknown@unknown>
+# name: grad
+# type: matrix
+# rows: 3
+# columns: 1
+ 0.1583536172450568
+ 0.224050027431177
+ -0.1074059876637406
+# name: J
+# type: scalar
+0.7672433467747265
